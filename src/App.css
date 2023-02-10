@@ -41,6 +41,7 @@ button{
   font-family: inherit;
   font-size: .9rem;
   color: var(--DARKGRAYISHBLUE);
+  cursor: pointer;
 }
 
 .notification--counter{

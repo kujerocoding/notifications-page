@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Notifications = () => {
+const Notifications = (props) => {
   return (
     <div className='main-container'>
         <header>
-            <h2>Notifications<span className='notification--counter'>0</span></h2>
-            <button>Mark all as read</button>
+            <h2>Notifications<span className='notification--counter'>{props.count}</span></h2>
+            <button onClick={props.markAllAsRead}>Mark all as read</button>
         </header>
         <div className='notifications-container'>
-            <div className='notification--container'>
+            <div className='notification--container' onClick={props.toggle} id='1'>
                 <img src="../src/assets/images/avatar-mark-webber.webp" alt="" />
                 <p>
                 <span className='notification--name'>Mark Webber </span>
