@@ -19,3 +19,77 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: var(--FF);
+  font-size: var(--FS);
+}
+
+.main-container{
+  padding: 30px 20px;
+  margin-inline: auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+button{
+  all: unset;
+  font-family: inherit;
+  font-size: .9rem;
+  color: var(--DARKGRAYISHBLUE);
+}
+
+.notification--counter{
+  font-size: 1.2rem;
+  background-color: var(--BLUE);
+  color: var(--WHITE);
+  padding-inline: 10px;
+  border-radius: 4px;
+  padding-bottom: 4px;
+  top: 30px;
+  position: absolute;
+}
+
+.notifications-container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification--container{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  /* background-color: red; */
+  border-radius: 10px;
+  font-size: .8rem;
+}
+
+.notification--container > img{
+  width: 40px;
+  height: 40px;
+}
+
+.notification--name{
+  font-weight: bolder;
+  color: var(--VERYDARKBLUE);
+}
+
+.nofitication--react{
+  font-weight: bolder;
+  color: var(--DARKGRAYISHBLUE);
+}
+
+.notification--group{
+  font-weight: bolder;
+  color: var(--BLUE);
+}
+
+.notification--container > p{
+  color: var(--DARKGRAYISHBLUE);
+}
