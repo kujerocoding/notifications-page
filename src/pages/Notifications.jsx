@@ -12,14 +12,14 @@ const Notifications = (props) => {
             <p className="notification--activity">
                 <span className='notification--name'>{props.name} </span>
                 {props.activity}
-                <span className={props.objectActivity === "Chess Club" ? "notification--group" : "notification--objectActivity"}> {props.objectActivity} {props.isRead && <img src="../src/assets/images/circle.svg"></img>}
+                <span className="notification--objectActivity"> {props.objectActivity} {props.isRead && <img src="../src/assets/images/circle.svg"></img>}
                 </span>
                 <br />
                 <span className='notification--time'>{props.time} ago</span>
                 <br />
                 {props.message !== "" && <div className='notification--message'>{props.message}</div>}
             </p>
-            {props.hasObjectImg && <img className='notification--img' src={props.objectImg} alt="" />}
+            {props.hasObjectImg && <img className='notification--img' src={props.objectImg} alt="girl playing chess" />}
         </div>
   )
 }

@@ -23,11 +23,17 @@
 body{
   font-family: var(--FF);
   font-size: var(--FS);
+  background-color: var(--LIGHTGRAYISHBLUE2);
 }
 
 .main--container{
   padding: 30px 20px;
-  margin-inline: auto;
+  margin: 50px auto;
+  max-width: 600px;
+  background-color: var(--WHITE);
+  border-radius: 10px;
+  position: relative;
+  min-width: 335px;
 }
 
 header{
@@ -54,6 +60,7 @@ button{
   padding-bottom: 4px;
   top: 30px;
   position: absolute;
+  left: 190px;
 }
 
 
@@ -69,6 +76,7 @@ button{
 .notification--avatar, .notification--img{
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .notification--name{
@@ -97,3 +105,13 @@ button{
   padding: 10px;
   color: var(--GRAYISHBLUE);
 }
+
+.notification--name:hover, .notification--objectActivity:hover{
+  color: var(--BLUE);
+  cursor: pointer;
+}
+
+.notification--message:hover{
+  background-color: var(--LIGHTGRAYISHBLUE1);
+}
+
