@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+  --FF: 'Plus Jakarta Sans', sans-serif;
+  --FS: 16px;
+  --RED: hsl(1, 90%, 64%);
+  --BLUE: hsl(219, 85%, 26%);
+  --WHITE: hsl(0, 0%, 100%);
+  --VERYLIGHTGRAYISHBLUE: hsl(210, 60%, 98%);
+  --LIGHTGRAYISHBLUE1: hsl(211, 68%, 94%);
+  --LIGHTGRAYISHBLUE2: hsl(205, 33%, 90%);
+  --GRAYISHBLUE: hsl(219, 14%, 63%);
+  --DARKGRAYISHBLUE: hsl(219, 12%, 42%);
+  --VERYDARKBLUE: hsl(224, 21%, 14%);
+}
+
+*, *::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
