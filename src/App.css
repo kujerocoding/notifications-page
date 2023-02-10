@@ -3,7 +3,7 @@
 :root{
   --FF: 'Plus Jakarta Sans', sans-serif;
   --FS: 16px;
-  --RED: hsl(1, 90%, 64%);
+  --RED: #f65351;
   --BLUE: hsl(219, 85%, 26%);
   --WHITE: hsl(0, 0%, 100%);
   --VERYLIGHTGRAYISHBLUE: #f7fafd;
@@ -76,7 +76,7 @@ button{
   color: var(--VERYDARKBLUE);
 }
 
-.nofitication--activity{
+.notification--activity{
   color: var(--GRAYISHBLUE);
 }
 
@@ -90,12 +90,10 @@ button{
   color: var(--BLUE);
 }
 
-/* .dot{
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: red;
-} */
-
-
-
+.notification--message{
+  margin-top: 10px;
+  outline: 1.5px solid var(--LIGHTGRAYISHBLUE2);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--GRAYISHBLUE);
+}
