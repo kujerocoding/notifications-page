@@ -119,3 +119,9 @@ button:hover{
   background-color: var(--LIGHTGRAYISHBLUE1);
 }
 
+
+.attribution{
+  margin-top: 20px;
+  text-align: center;
+  font-size: .7rem;
+}

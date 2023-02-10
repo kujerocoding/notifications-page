@@ -45,6 +45,9 @@ const App = () => {
         <button onClick={markAllAsRead}>Mark all as read</button>
         </header>
       {notifElements}
+      <div className='attribution'>
+            Challenge by <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor.</a> Coded by kujerocoding
+        </div>
       </div>
   )
 }
