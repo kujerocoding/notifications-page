@@ -1,8 +1,10 @@
 import React from 'react'
 
+
+
 const Notifications = (props) => {
     const style = {
-        backgroundColor : props.isRead ? /* '#f7fafd' */ 'orange' : "white"
+        backgroundColor : props.isRead ? '#f7fafd'  : "white"
     }
   return (
         <div className='notification--container' onClick={props.toggle} style={style}>
@@ -10,7 +12,9 @@ const Notifications = (props) => {
             <p className="notification--activity">
                 <span className='notification--name'>{props.name} </span>
                 {props.activity}
-                <span className={props.objectActivity === "Chess Club" ? "notification--group" : "notification--objectActivity"}> {props.objectActivity}</span>
+                <span className={props.objectActivity === "Chess Club" ? "notification--group" : "notification--objectActivity"}> {props.objectActivity} {props.isRead && <img src="../src/assets/images/circle.svg"></img>}
+                </span>
+                <span className='dot'></span>
                 <br />
                 <span className='notification--time'>{props.time} ago</span>
                 <br />

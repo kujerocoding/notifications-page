@@ -40,6 +40,7 @@ const App = () => {
   return (
     <div className='main--container'>
       <header>
+        {/* <img src="./src/assets/images/circle.svg" alt="small red circle" /> */}
         <h2>Notifications<span className='notification--counter'>{notifCount}</span></h2>
         <button onClick={markAllAsRead}>Mark all as read</button>
         </header>
