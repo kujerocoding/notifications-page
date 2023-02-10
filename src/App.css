@@ -51,6 +51,10 @@ button{
   cursor: pointer;
 }
 
+button:hover{
+  color: var(--BLUE);
+}
+
 .notification--counter{
   font-size: 1.2rem;
   background-color: var(--BLUE);
