@@ -15,7 +15,7 @@ const App = () => {
 
   function toggle(id){
     console.log(id)
-    setMarkRead(prevState => !prevState)
+    /* setMarkRead(prevState => !prevState) */
   }
 
   const notifElements = notificationData.map(notif => 
@@ -26,13 +26,15 @@ const App = () => {
                  objectImg={notif.objectImg}
                  time={notif.time}
                  message={notif.message}
-                 hasObjectImg={notif.hasObjectImg}/>)
+                 hasObjectImg={notif.hasObjectImg}
+                 key={notif.id}
+                 toggle={()=>toggle(notif.id)}/>)
   
   return (
     <div className='main--container'>
       <header>
         <h2>Notifications<span className='notification--counter'>{notifCount}</span></h2>
-        <button>Mark all as read</button>
+        <button onClick={markAllAsRead}>Mark all as read</button>
         </header>
       {notifElements}
       </div>

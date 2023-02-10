@@ -1,5 +1,8 @@
+import { nanoid } from "nanoid"
+
 export default[
     {
+        id: nanoid(),
         name: 'Mark Webber',
         avatar: 'avatar-mark-webber.webp',
         activity: 'reacted to your recent post',
@@ -9,6 +12,7 @@ export default[
         time: '1m'
     },
     {
+        id: nanoid(),
         name: 'Angela',
         avatar: 'avatar-angela-gray.webp',
         activity: 'followed you',
@@ -18,6 +22,7 @@ export default[
         time: '5m'
     },
     {
+        id: nanoid(),
         name: 'Jacob Thompson',
         avatar: 'avatar-jacob-thompson.webp',
         activity: 'has joined your group',
@@ -27,6 +32,7 @@ export default[
         time: '1 day'
     },
     {
+        id: nanoid(),
         name: 'Rizky Hasanuddin',
         avatar: 'avatar-rizky-hasanuddin.webp',
         activity: 'sent you a private message',
@@ -36,6 +42,7 @@ export default[
         time: '5 days'
     },
     {
+        id: nanoid(),
         name: 'Kimberly Smith',
         avatar: 'avatar-kimberly-smith.webp',
         activity: 'commented on your picture',
@@ -47,6 +54,7 @@ export default[
         time: '1 week'
     },
     {
+        id: nanoid(),
         name: 'Nathan Peterson',
         avatar: 'avatar-nathan-peterson.webp',
         activity: 'reacted to your recent post',
@@ -56,6 +64,7 @@ export default[
         time: '2 weeks'
     },
     {
+        id: nanoid(),
         name: 'Anna Kim',
         avatar: 'avatar-anna-kim.webp',
         activity: 'left the group',
