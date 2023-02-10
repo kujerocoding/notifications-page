@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Notifications from './pages/Notifications'
 import './App.css'
+import notificationData from './notificationData'
 
 const App = () => {
 
+  
   const [notifCount, setNotifCount] = useState(0);
   const[markRead, setMarkRead] = useState(false)
 
@@ -16,9 +18,22 @@ const App = () => {
     setMarkRead(prevState => !prevState)
   }
 
+  const notifElements = notificationData.map(notif => 
+  <Notifications name={notif.name} 
+                 avatar={notif.avatar} 
+                 activity={notif.activity}
+                 objectActivity={notif.objectActivity}
+                 objectImg={notif.objectImg}
+                 time={notif.time}
+                 message={notif.message}/>)
+  
   return (
     <div>
-      <Notifications count={notifCount} markAllAsRead={markAllAsRead} toggle={toggle} />
+        <header>
+        <h2>Notifications<span className='notification--counter'></span></h2>
+        <button>Mark all as read</button>
+        </header>
+      {notifElements}
     </div>
   )
 }
