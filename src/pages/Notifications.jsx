@@ -1,8 +1,11 @@
 import React from 'react'
 
 const Notifications = (props) => {
+    const style = {
+        backgroundColor : props.isRead ? '#f7fafd' : "white"
+    }
   return (
-        <div className='notification--container' onClick={props.toggle}>
+        <div className='notification--container' onClick={props.toggle} style={style}>
             <img className="notification--avatar" src={`../src/assets/images/${props.avatar}`} alt="profile avatar" />
             <p className="notification--activity">
                 <span className='notification--name'>{props.name} </span>

@@ -6,7 +6,7 @@
   --RED: hsl(1, 90%, 64%);
   --BLUE: hsl(219, 85%, 26%);
   --WHITE: hsl(0, 0%, 100%);
-  --VERYLIGHTGRAYISHBLUE: hsl(210, 60%, 98%);
+  --VERYLIGHTGRAYISHBLUE: #f7fafd;
   --LIGHTGRAYISHBLUE1: hsl(211, 68%, 94%);
   --LIGHTGRAYISHBLUE2: hsl(205, 33%, 90%);
   --GRAYISHBLUE: hsl(219, 14%, 63%);
@@ -61,7 +61,6 @@ button{
   padding: 20px;
   display: flex;
   gap: 20px;
-  background-color: var(--VERYLIGHTGRAYISHBLUE);
   border-radius: 10px;
   font-size: .8rem;
   margin-bottom: 10px;

@@ -7,7 +7,8 @@ const App = () => {
 
   
   const [notifCount, setNotifCount] = useState(0);
-  const[markRead, setMarkRead] = useState(false)
+  const [data, setData] = useState(notificationData)
+  
 
   function markAllAsRead(){
     setNotifCount(0)
@@ -15,10 +16,10 @@ const App = () => {
 
   function toggle(id){
     console.log(id)
-    /* setMarkRead(prevState => !prevState) */
+    return setData(prevState => prevState.map(item => item.id === id ? {...item, isRead: !item.isRead} : item))
   }
 
-  const notifElements = notificationData.map(notif => 
+  const notifElements = data.map(notif => 
   <Notifications name={notif.name} 
                  avatar={notif.avatar} 
                  activity={notif.activity}
@@ -28,7 +29,8 @@ const App = () => {
                  message={notif.message}
                  hasObjectImg={notif.hasObjectImg}
                  key={notif.id}
-                 toggle={()=>toggle(notif.id)}/>)
+                 toggle={()=>toggle(notif.id)}
+                 isRead={notif.isRead}/>)
   
   return (
     <div className='main--container'>
