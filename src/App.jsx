@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Notifications from './pages/Notifications'
 import './App.css'
 import notificationData from './notificationData'
@@ -9,14 +9,19 @@ const App = () => {
   const [notifCount, setNotifCount] = useState(0);
   const [data, setData] = useState(notificationData)
   
+  useEffect(() => {
+    const isReadCount = data.filter(item => item.isRead)
+    setNotifCount(isReadCount.length)
+  },[data])
 
   function markAllAsRead(){
-    setNotifCount(0)
+    setData(prevState => prevState.map(item => item.isRead ? {...item,isRead: false} : item))
   }
 
   function toggle(id){
-    console.log(id)
-    return setData(prevState => prevState.map(item => item.id === id ? {...item, isRead: !item.isRead} : item))
+    
+    setData(prevState => prevState.map(item => item.id === id ? {...item, isRead: !item.isRead} : item))
+
   }
 
   const notifElements = data.map(notif => 

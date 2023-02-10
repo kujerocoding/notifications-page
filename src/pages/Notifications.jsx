@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notifications = (props) => {
     const style = {
-        backgroundColor : props.isRead ? '#f7fafd' : "white"
+        backgroundColor : props.isRead ? /* '#f7fafd' */ 'orange' : "white"
     }
   return (
         <div className='notification--container' onClick={props.toggle} style={style}>
