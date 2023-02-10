@@ -25,16 +25,17 @@ const App = () => {
                  objectActivity={notif.objectActivity}
                  objectImg={notif.objectImg}
                  time={notif.time}
-                 message={notif.message}/>)
+                 message={notif.message}
+                 hasObjectImg={notif.hasObjectImg}/>)
   
   return (
-    <div>
-        <header>
-        <h2>Notifications<span className='notification--counter'></span></h2>
+    <div className='main--container'>
+      <header>
+        <h2>Notifications<span className='notification--counter'>{notifCount}</span></h2>
         <button>Mark all as read</button>
         </header>
       {notifElements}
-    </div>
+      </div>
   )
 }
 

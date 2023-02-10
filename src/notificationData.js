@@ -40,6 +40,7 @@ export default[
         avatar: 'avatar-kimberly-smith.webp',
         activity: 'commented on your picture',
         objectActivity: "",
+        hasObjectImg: true,
         objectImg: '../src/assets/images/image-chess.webp',
         message:"",
         isRead: false,

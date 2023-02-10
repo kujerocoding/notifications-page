@@ -2,22 +2,19 @@ import React from 'react'
 
 const Notifications = (props) => {
   return (
-    <div className='main-container'>
-
         <div className='notification--container'>
-        <img classname="notification--avatar" src={`../src/assets/images/${props.avatar}`} alt="profile avatar" />
-        <p>
-            <span className='notification--name'>{props.name} </span>
-            {props.activity}
-            <span className='nofitication--activity'> {props.objectActivity}</span>
-            <span><img className='notification--img' src={props.objectImg} alt="" /></span>
-            <br />
-            <span className='notification--time'>{props.time} ago</span>
-            <br />
-            <span className='notification--message'>{props.message}</span>
-        </p>
+            <img className="notification--avatar" src={`../src/assets/images/${props.avatar}`} alt="profile avatar" />
+            <p className="notification--activity">
+                <span className='notification--name'>{props.name} </span>
+                {props.activity}
+                <span className={props.objectActivity === "Chess Club" ? "notification--group" : "notification--objectActivity"}> {props.objectActivity}</span>
+                <br />
+                <span className='notification--time'>{props.time} ago</span>
+                <br />
+                <span className='notification--message'>{props.message}</span>
+            </p>
+            {props.hasObjectImg && <img className='notification--img' src={props.objectImg} alt="" />}
         </div>
-    </div>
   )
 }
 

@@ -25,7 +25,7 @@ body{
   font-size: var(--FS);
 }
 
-.main-container{
+.main--container{
   padding: 30px 20px;
   margin-inline: auto;
 }
@@ -33,6 +33,7 @@ body{
 header{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 
 }
 
@@ -55,23 +56,18 @@ button{
   position: absolute;
 }
 
-.notifications-container{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 .notification--container{
   padding: 20px;
   display: flex;
   gap: 20px;
-  /* background-color: red; */
+  background-color: var(--VERYLIGHTGRAYISHBLUE);
   border-radius: 10px;
   font-size: .8rem;
+  margin-bottom: 10px;
 }
 
-.notification--container > img{
+.notification--avatar, .notification--img{
   width: 40px;
   height: 40px;
 }
@@ -81,9 +77,13 @@ button{
   color: var(--VERYDARKBLUE);
 }
 
-.nofitication--react{
-  font-weight: bolder;
+.nofitication--activity{
+  color: var(--GRAYISHBLUE);
+}
+
+.notification--objectActivity{
   color: var(--DARKGRAYISHBLUE);
+  font-weight: bolder;
 }
 
 .notification--group{
@@ -91,6 +91,4 @@ button{
   color: var(--BLUE);
 }
 
-.notification--container > p{
-  color: var(--DARKGRAYISHBLUE);
-}
+
